@@ -5,10 +5,10 @@
   "dependencies": {
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
-    "google-sheets-node-api": "^0.3.0",
+    // "google-sheets-node-api": "^0.3.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
-    "react-google-sheet-connector": "^1.0.1",
+    // "react-google-sheet-connector": "^1.0.1",
     "react-scripts": "1.0.17",
     "react-test-renderer": "^16.1.1"
   },
@@ -16,6 +16,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "homepage": "https://warronbebster.github.io/paid-internships",
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }
