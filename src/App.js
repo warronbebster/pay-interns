@@ -1,13 +1,13 @@
 import React from 'react';
-import HelloWorldList from './HelloWorldList';
-
-import './App.css';
+import CompanyList from './CompanyList';
+import Popup from './Popup';
 
 
 const App = () => {
   return (
-    <div className="App">
-      <HelloWorldList/>
+  	<div>
+      <CompanyList/>
+      <Popup/>
     </div>
   );
 };

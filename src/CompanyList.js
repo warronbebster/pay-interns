@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import './HelloWorldList.css';
 
-import HelloWorld from './HelloWorld';
+import Company from './Company';
 import SearchBar from './SearchBar';
 import Fuse from 'fuse.js';
 
@@ -18,7 +17,7 @@ const SCOPES = "https://www.googleapis.com/auth/spreadsheets.readonly";
 
 const fuseOptions = {
 	shouldSort: true,
-	threshold: 0.6,
+	threshold: 0.3,
 	location: 0,
 	distance: 100,
 	maxPatternLength: 24,
@@ -28,14 +27,14 @@ const fuseOptions = {
 	]
 };
 
-class HelloWorldList extends Component {
+class CompanyList extends Component {
 	constructor(props) {
 	    super(props); //grabs props from "component"
 	    // this.state = { greetings: ['Jim', 'Sally', 'bender'] }; 
 	    this.searchBar = this.searchBar.bind(this);
 	    // this.removeGreeting = this.removeGreeting.bind(this);
 	    this.componentDidMount = this.componentDidMount.bind(this);
-	    this.state = data; //make the state of HelloWorldList 
+	    this.state = data; //make the state of CompanyList 
 	}
 
 
@@ -99,9 +98,9 @@ class HelloWorldList extends Component {
 		    });
 		}
 
-		function listMajors() {
+		// function listMajors() {
 			
-		}
+		// }
 
 	}
 
@@ -109,7 +108,7 @@ class HelloWorldList extends Component {
 
     render() {
         return (
-        	<div className="HelloWorldList" >
+        	<div className="CompanyList" >
         		<SearchBar searchBar={this.searchBar} />{/*passes the searchbar function as a prop to SearchBar */}
         		{this.renderList()}
             </div>
@@ -121,7 +120,7 @@ class HelloWorldList extends Component {
     }
 
     searchBar(searchString) { //this function is going to get passed as a prop to the "searchBar" file
-    	if (searchString.length != 0){ //if there's something in the search box
+    	if (searchString.length !== 0){ //if there's something in the search box
 			const newFuse = new Fuse(data.sites, fuseOptions); //new Fuse object
 			const result = newFuse.search(searchString); //run the search, return to results (returns array)
 			this.setState({sites:result}); //set state as results of search
@@ -187,13 +186,13 @@ class HelloWorldList extends Component {
 
     // renderGreetings() {
     //     return this.state.map(name => ( //map each thing in the "greetings" array to this function
-    //     	<HelloWorld key = { name } name = { name } removeGreeting = {this.removeGreeting}/> //this is where "remove Greeting" gets passed as a prop
+    //     	<Company key = { name } name = { name } removeGreeting = {this.removeGreeting}/> //this is where "remove Greeting" gets passed as a prop
     //     ));
     // }
 
     renderList() { //we could just dump the stuff in here inside render
-        return this.state.sites.map((data, index) => ( //map each thing in the "greetings" array to a "helloWorld" component
-        	<HelloWorld key = {index} link = { data.link } name = { data.name } /> //this is where "remove Greeting" gets passed as a prop
+        return this.state.sites.map((data, index) => ( //map each thing in the "greetings" array to a "Company" component
+        	<Company key = {index} link = { data.website } name = { data.name } /> //this is where "remove Greeting" gets passed as a prop
         ));
     }
 
@@ -206,4 +205,4 @@ class HelloWorldList extends Component {
 
 }
 
-export default HelloWorldList;
+export default CompanyList;

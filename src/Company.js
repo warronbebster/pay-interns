@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-import './HelloWorld.css';
+import React from 'react';
 
-function HelloWorld (props) {
+function Company (props) {
 
     // constructor(props) { //this sets up that props are a thing held in HelloWorld Class Instances
     // 	super(props); //because this extends component? Kind of grabs "props" from it?
@@ -12,8 +11,8 @@ function HelloWorld (props) {
 
     // render() {
         return ( 
-        	<div className = 'HelloWorld' > 
-        		<a href={props.link} target='blank' className = 'listItem'> {props.name}</a>
+        	<div className = 'Company' > 
+        		<a href={props.link} target='blank' className = 'listItem' style={{cursor: 'pointer'}}> {props.name}</a>
             </div>
         );
     // }
@@ -27,4 +26,4 @@ function HelloWorld (props) {
     // }
 }
 
-export default HelloWorld;
+export default Company;

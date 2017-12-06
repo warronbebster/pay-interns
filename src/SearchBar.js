@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 // import fuse from 'fuse.js';
-import './AddGreeter.css';
 
 class SearchBar extends Component {
   constructor(props) {
@@ -12,12 +11,14 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <div className="AddGreeter">
+      <div className="SearchBar">
         <input
           type="text"
           maxLength="24"
           onChange={this.searchBar}
+          placeholder="Search"
           value={this.state.searching} //this is mostly just to delete what's in there when addGreeting is activated
+          autoFocus
         />
         &nbsp;&nbsp;
         {/*<button onClick={this.addGreeting}>Add</button> */}
@@ -25,10 +26,6 @@ class SearchBar extends Component {
     );
   }
 
-  // handleUpdate(event) {
-  //   this.setState({ greetingName: event.target.value });
-  //   console.log(event.target.value);
-  // }
 
   searchBar(event) {
     // this.setState({ searching: event.target.value });
