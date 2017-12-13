@@ -30,7 +30,7 @@ class Popup extends Component {
               <ul>
                 <li>
                   <label>Who made this, and why?</label>
-                  <p>I'm Barron, and I made this .</p>
+                  <p>I'm <a href="http://barronwebster.com" target="blank">Barron</a>. I made this to help anyone find an internship that they can afford to take in NYC. Internships are arguably the best way to get a foot in the door in the creative industry, but living in the Big Apple ain't cheap.</p>
                 </li>
                 <li>
                   <label>How was this data gathered?</label>
@@ -38,11 +38,11 @@ class Popup extends Component {
                 </li>
                 <li>
                   <label>Why $13.40?</label>
-                  <p>Yes! Use <a href="">this form</a> to let </p>
+                  <p>$13.40 is the current living wage for NYC, according to <a href="https://www1.nyc.gov/site/dca/about/living-wage-law.page">NYC Consumer Affairs.</a></p>
                 </li>
                 <li>
-                  <label>I know an employer who fits this description. Can you include them?</label>
-                  <p>Yes! Use <a href="">this form</a> to let </p>
+                  <label>I know/am an employer who fits this description. Can you include them/me?</label>
+                  <p>Yes! Use <a href="https://goo.gl/forms/JjKpfr9SKmb9X9863">this form</a> to let me know about them, and I'll include you!</p>
                 </li>
               </ul>
             </div>
