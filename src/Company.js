@@ -11,9 +11,9 @@ function Company (props) {
 
     // render() {
         return ( 
-        	<div className = 'Company' > 
+        	// <div className = 'Company' > 
         		<a href={props.link} target='blank' className = 'listItem' style={{cursor: 'pointer'}}> {props.name}</a>
-            </div>
+            // </div>
         );
     // }
 
