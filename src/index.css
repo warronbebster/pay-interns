@@ -97,6 +97,7 @@ a:hover{
 	cursor: pointer;
 	/*color: var(--highlight-color);*/
 	transition: transform .3s ease, color .2s ease;
+	z-index: 3;
 }
 
 
@@ -146,6 +147,7 @@ a:hover{
 }
 .popup_inner {
 	padding: 20px 30vw 20px 20px;
+	max-width: 700px;
   position: fixed;
   border: 2px solid var(--main-color);
   z-index: 3;
@@ -163,17 +165,21 @@ ul{
 	padding: 0 0 0 15px;
 	margin: 0;
 	font-size: 2rem;
+	line-height: 1;
 }
 
 label{
 	font-size: 1.3rem;
+	line-height: .5;
+	display: inline;
 	/*font-weight: 500;*/
 	/*letter-spacing: 1px;*/
 }
 
 p{
-	padding: 0 0 20px 0;
+	padding: 5px 0 20px 0;
 	margin: 0;
+	line-height: 1.5;
 }
 
 

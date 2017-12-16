@@ -34,14 +34,14 @@ class Popup extends Component {
                 </li>
                 <li>
                   <label>How was this data gathered?</label>
-                  <p>All the places are on this list because I've verified that they pay interns over $13.40 with someone who has interned or worked there, or have seen job postings that verify that amount. (It's pretty un-scientific.)</p>
+                  <p>All the places are on this list because I've verified that they pay interns over $13.40 with someone who has interned or worked there, or have seen job postings that verify that amount. It's not scientific or perfect, but it's worked so far. If any of the places are listed incorrectly, contact me!</p>
                 </li>
                 <li>
                   <label>Why $13.40?</label>
                   <p>$13.40 is the current living wage for NYC, according to <a href="https://www1.nyc.gov/site/dca/about/living-wage-law.page">NYC Consumer Affairs.</a></p>
                 </li>
                 <li>
-                  <label>I know/am an employer who fits this description. Can you include them/me?</label>
+                  <label>I know/am an employer who fits this description. <br/>Can you include them/me?</label>
                   <p>Yes! Use <a href="https://goo.gl/forms/JjKpfr9SKmb9X9863">this form</a> to let me know about them, and I'll include you!</p>
                 </li>
               </ul>
