@@ -182,21 +182,24 @@ p{
 	line-height: 1.5;
 }
 
-
-@media (max-width: 640px) { 
-.popup_inner{
-	left: 20px;
-	right: 20px;
-	top: 20px;
-	bottom: 20px;
-	padding: 10px 20px 10px 10px;
+#outro{
+	padding-top: 100px;
 }
 
-html{
-	font-size: 60%;
-}
+/*small screeeeeens*/
 
-}
+@media (max-width: 640px) {
+    .popup_inner {
+        left: 20px;
+        right: 20px;
+        top: 20px;
+        bottom: 20px;
+        padding: 10px 20px 10px 10px;
+    }
 
+    html {
+        font-size: 60%;
+    }
+}
 
 
