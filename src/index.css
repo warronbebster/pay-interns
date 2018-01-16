@@ -186,7 +186,8 @@ p{
 	padding-top: 100px;
 }
 
-.fb_iframe_widget {display: inline-flex !important;}
+.fb_iframe_widget {display: inline-flex !important;
+padding-right: 10px;}
 
 .twitter-share-button{}
 
