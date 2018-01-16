@@ -186,6 +186,10 @@ p{
 	padding-top: 100px;
 }
 
+.fb_iframe_widget {display: inline-flex !important;}
+
+.twitter-share-button{}
+
 /*small screeeeeens*/
 
 @media (max-width: 640px) {

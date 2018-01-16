@@ -10,24 +10,20 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <script src="https://apis.google.com/js/api.js"></script>
+    
 
+
+    <title>NYC Paid Creative Internships</title>
     <meta name="description" content="Find creative internships that pay above the living wage in NYC.">
     <meta name="keywords" content="NYC, Design, Internships, Paid Internships, New York City, SVA, RISD, Parsons">
     <meta name="author" content="Barron Webster">
-    <meta property="og:image" content="%PUBLIC_URL%/social.png">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Rubik:300" rel="stylesheet"> -->
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-
-
-    -->
+    
+    <meta property="og:url"           content="http://payinterns.nyc" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="NYC Paid Creative Internships" />
+    <meta property="og:description"   content="Find creative internships that pay above the living wage in NYC." />
+    <meta property="og:image"         content="http://payinterns.nyc/social.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@warronbebster">
@@ -35,8 +31,9 @@
     <meta name="twitter:title" content="NYC Paid Creative Internships">
     <meta name="twitter:description" content="Find creative internships that pay above the living wage in NYC.">
     <meta name="twitter:image" content="http://payinterns.nyc/social.png">
-    <title>NYC Paid Creative Internships</title>
+    
 
+    <script src="https://apis.google.com/js/api.js"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41248754-8"></script>
     <script>
@@ -67,8 +64,52 @@
       </h1>
     </div>
 
-    <!--
-      This HTML file is a template.
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+    <!-- Your share button code -->
+    <div class="fb-share-button" 
+      data-href="http://payinterns.nyc" 
+      data-layout="button"
+      data-size="large">
+    </div>
+
+
+
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+
+      return t;
+    }(document, "script", "twitter-wjs"));</script>
+
+    <a  
+    class="twitter-share-button"
+    href="https://twitter.com/intent/tweet?text=A list of NYC design agencies that pay their interns more than the NYC living wage:"
+    data-size="large">
+      Tweet
+    </a>
+
+        <!--
+          This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
       You can add webfonts, meta tags, or analytics to this file.
