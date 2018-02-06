@@ -12,7 +12,7 @@ function Company (props) {
     // render() {
         return ( 
         	// <div className = 'Company' > 
-        		<a href={props.link} target='blank' className = 'listItem' style={{cursor: 'pointer'}}> {props.name}</a>
+        		<a href={props.link} target='_blank' className = 'listItem' style={{cursor: 'pointer'}}> {props.name}</a>
             // </div>
         );
     // }
