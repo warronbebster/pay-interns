@@ -1,5 +1,5 @@
 {
-  "name": "internships",
+  "name": "@gabrielkeogh/internships",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,14 +13,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "prebuild": "rm -rf docs",
     "build": "react-scripts build",
+    "postbuild": "mv build docs && cp docs/index.html docs/404.html",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
-  },
-  "homepage": "https://payinterns.nyc",
-  "devDependencies": {
-    "gh-pages": "^1.1.0"
+    "eject": "react-scripts eject"
   }
 }
